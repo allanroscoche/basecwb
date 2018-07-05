@@ -9,7 +9,7 @@ class GhostSubscribe extends React.Component {
       // Email subscribe form at the bottom of the page
       return (
         <section className="gh-subscribe">
-          <h3 className="gh-subscribe-title">Subscribe to {blog.title}</h3>
+          <h3 className="gh-subscribe-title">Receber atualizações de {blog.title}</h3>
           <p>Get the latest posts delivered right to your inbox.</p>
           <span className="gh-subscribe-rss">
             or subscribe{" "}

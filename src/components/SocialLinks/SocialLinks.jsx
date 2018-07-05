@@ -14,13 +14,14 @@ class SocialLinks extends Component {
       LinkedinShareButton,
       TwitterShareButton,
       TelegramShareButton,
-      RedditShareButton
+      RedditShareButton,
+      WhatsappShareButton
     } = ShareButtons;
     const {
       FacebookShareCount,
       GooglePlusShareCount,
       LinkedinShareCount,
-      RedditShareCount
+      RedditShareCount,
     } = ShareCounts;
 
     const FacebookIcon = generateShareIcon("facebook");
@@ -29,6 +30,7 @@ class SocialLinks extends Component {
     const GooglePlusIcon = generateShareIcon("google");
     const LinkedinIcon = generateShareIcon("linkedin");
     const RedditIcon = generateShareIcon("reddit");
+    const WhatsappIcon = generateShareIcon("whatsapp");
     const iconSize = mobile ? 36 : 48;
     const filter = count => (count > 0 ? count : "");
 
@@ -68,6 +70,9 @@ class SocialLinks extends Component {
         <TelegramShareButton url={url}>
           <TelegramIcon round size={iconSize} />
         </TelegramShareButton>
+        <WhatsappShareButton url={url}>
+          <WhatsappIcon round size={iconSize} />
+        </WhatsappShareButton>
       </div>
     );
   }
