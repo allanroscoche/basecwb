@@ -7,11 +7,11 @@ module.exports = {
   siteLogo:
     "/logos/logo-1024.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
     siteUrl: "http://www.basecwb.com.br", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-starter-casper", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
+  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
     "Bar e Barbearia", // Website description used for RSS feeds/meta description tag.
   siteCover:
-    "/images/base-cover2.jpg", // Optional, the cover image used in header for home page. e.g: "/images/blog-cover.jpg",
+    "/images/base-cover2.jpg", // Optional, e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "Allan Roscoche", // The author name used in the RSS file
@@ -37,8 +37,8 @@ module.exports = {
       iconClassName: "fa fa-twitter" // Disabled, see Navigation.jsx
     },
     {
-      label: "Email",
-      url: "#",
+      label: "Localização",
+      url: "#localizacao",
       iconClassName: "fa fa-envelope" // Disabled, see Navigation.jsx
     }
   ],

@@ -1,7 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { Link } from "react-scroll";
-import PostListing from "../components/PostListing/PostListing";
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 import Drawer from "../layouts/Drawer/Drawer";
@@ -14,8 +13,8 @@ import BlogLogo from "../components/BlogLogo/BlogLogo";
 import MenuButton from "../components/MenuButton/MenuButton";
 import PageTitle from "../components/PageTitle/PageTitle";
 import PageDescription from "../components/PageDescription/PageDescription";
-import PaginatedContent from "../layouts/PaginatedContent/PaginatedContent";
 import SocialMediaIcons from "../components/SocialMediaIcons/SocialMediaIcons";
+import Location from "../components/Location/Location";
 
 class IndexTemplate extends React.Component {
   state = {
@@ -99,11 +98,17 @@ class IndexTemplate extends React.Component {
             </MainHeader>
 
           </div>
+          <Location 
+            isMarkerShow={true} 
+            googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH90J6U0aq4tm6Xbi_-hvjG-YyOdkQtFs&v=3.exp&libraries=geometry,drawing,places"
+            loadingElement={<div style={{ height: `100%` }} />}
+            containerElement={<div style={{ height: `400px` }} />}
+            mapElement={<div style={{ height: `100%` }} />}
+          />
 
           {/* The tiny footer at the very bottom */}
           <Footer
             copyright={config.copyright}
-            promoteGatsby={config.promoteGatsby}
           />
         </SiteWrapper>
       </Drawer>
