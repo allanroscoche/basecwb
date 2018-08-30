@@ -7,7 +7,7 @@ module.exports = {
   siteLogo:
     "/logos/logo-1024.png", // Logo used for SEO and manifest. e.g. "/logos/logo-1024.png",
     siteUrl: "http://www.basecwb.com.br", // Domain of your website without pathPrefix.
-  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
+    pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-casper/.
   siteDescription:
     "Bar e Barbearia", // Website description used for RSS feeds/meta description tag.
   siteCover:
