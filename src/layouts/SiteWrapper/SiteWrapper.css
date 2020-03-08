@@ -8,6 +8,11 @@
     transition: transform 0.5s ease;
 }
 
+.home-media-tip {
+    font-size: 14px;
+    color: #BBB;
+}
+
 .nav-opened .site-wrapper {
     overflow-x: hidden;
     -webkit-transform: translate3d(-240px, 0, 0);

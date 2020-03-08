@@ -11,7 +11,7 @@ module.exports = {
   siteDescription:
     "Bar e Barbearia", // Website description used for RSS feeds/meta description tag.
   siteCover:
-    "/images/base-cover2.jpg", // Optional, e.g: "/images/blog-cover.jpg",
+    "/images/base-cover3.jpg", // Optional, e.g: "/images/blog-cover.jpg",
   siteNavigation: true, // If navigation is enabled the Menu button will be visible
   siteRss: "/rss.xml", // Path to the RSS file.
   siteRssAuthor: "Allan Roscoche", // The author name used in the RSS file

@@ -72,6 +72,7 @@ class IndexTemplate extends React.Component {
                 <div className="main-header-content inner">
                   <PageTitle text={config.siteTitle} />
                   <PageDescription text={config.siteDescription} />
+                  <span className="home-media-tip">Visite nossas mídias sociais</span>
                   <SocialMediaIcons
                     urls={config.siteSocialUrls}
                     color="currentColor"

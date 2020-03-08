@@ -48,7 +48,7 @@ export default class HTML extends React.Component {
             type="text/css"
             href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400"
           />
-
+          <link rel="stylesheet" href="https://admin.salaovip.com.br/public/css/agenda_embed/flaticon.css" />
           {this.props.headComponents}
           <link rel="shortcut icon" href={favicon} />
           {css}
@@ -59,6 +59,9 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
+          <script src="https://admin.salaovip.com.br/public/js/jquery.min.js" />
+          <script src="https://admin.salaovip.com.br/public/js/bootstrap.min.js" />
+          <script src="https://admin.salaovip.com.br/agenda_integracao/basecuritiba" />
         </body>
       </html>
     );
